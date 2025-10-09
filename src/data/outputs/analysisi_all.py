@@ -10,7 +10,7 @@ import statsmodels.api as sm
 from sklearn.metrics import roc_curve, auc
 
 # CSVファイルの読み込み
-df = pd.read_csv("C:\\Users\\mmura\\OneDrive\\Desktop\\2025学会発表用\\2025学会発表修正後\\PLT重回帰分析.csv")
+df = pd.read_csv("ここにファイルパスを入力してください")
 
 
 
