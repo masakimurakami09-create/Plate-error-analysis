@@ -10,7 +10,7 @@ import statsmodels.api as sm
 from sklearn.metrics import roc_curve, auc
 
 # CSVファイルの読み込み
-df = pd.read_csv("ここにファイルパスを入力してください")
+df = pd.read_csv("ここにファイルパスを入力")
 
 
 
@@ -170,9 +170,6 @@ plt.tight_layout()
 plt.show()
 
 # データの読み込みと整形
-df = pd.read_csv("C:\\Users\\mmura\\OneDrive\\Desktop\\2025学会発表用\\2025学会発表修正後\\PLT重回帰分析.csv")
-df = df[['PLT-I', 'MCV', 'RDW-SD', 'MPV', 'PLT-F']].dropna()
-df['error'] = np.abs(df['PLT-I'] - df['PLT-F'])
 df['再検'] = (df['error'] >= 5).astype(int)
 
 # 解析対象の変数
